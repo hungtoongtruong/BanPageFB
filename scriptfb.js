@@ -32,7 +32,7 @@ $(document).ready(function() {
 						console.log(idPage);
 						}
                    // Check if the column index is 0 or 1
-					if (columnIndex === 1 || columnIndex === 5 || columnIndex === 10 || columnIndex === 14) {
+					if (columnIndex === 1 || columnIndex === 5 || columnIndex === 10 || columnIndex === 14 || columnIndex === 2) {
 						
 						// Create a new table data cell
 						const cell = document.createElement('td');
@@ -46,7 +46,10 @@ $(document).ready(function() {
 							cell.innerHTML =`<div class="fs-2 fw-bold" id="countup-value" data-kt-countup="true" data-kt-countup-prefix="">${parseFloat(cellData).toLocaleString()}</div>`;
 						} else if (columnIndex === 14) {
 							cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;
+						} else if (columnIndex === 2) {
+							cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;
 						}
+						
 
 						// Append the cell to the row
 						row.appendChild(cell);
