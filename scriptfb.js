@@ -1,6 +1,6 @@
 // Replace with your spreadsheet ID and range
 const spreadsheetId = '15pyjMSpqehIcn85E1V1g1wyAF-mGP_vDjhYnGVWEouw';
-const range = 'pageprofile!A2:O10'; // Replace with your desired range
+const range = 'pageprofile!A2:O100'; // Replace with your desired range
 
 $(document).ready(function() { 
     // Replace 'YOUR_API_KEY' with your actual API key
