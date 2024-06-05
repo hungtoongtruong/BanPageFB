@@ -47,7 +47,7 @@ $(document).ready(function() {
 						} else if (columnIndex === 14) {
 							cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;
 						} else if (columnIndex === 15) {
-							cell.innerHTML = ${cellData};
+							cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;
 						}
 						
 
