@@ -60,9 +60,11 @@ $(document).ready(function() {
                             } else if (columnIndex === 5) {
                                 cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;
                             } else if (columnIndex === 10) {
-                                cell.innerHTML = `<div class="fs-2 fw-bold">${parseFloat(cellData).toLocaleString()}</div>`;
+                                cell.innerHTML = `<div class="fs-2 fw-bold">${parseFloat(cellData).toLocaleString()}</div>`;								
                             } else if (columnIndex === 14) {
-                                cell.innerHTML = `<span class="badge badge-light-success fs-7 fw-bold">${cellData}</span>`;								
+								cell.classList.add('ps-9');
+                                cell.innerHTML = `${cellData}`;
+								
                             } 
                             // Append the cell to the row
                             row.appendChild(cell);
@@ -97,7 +99,7 @@ $(document).ready(function() {
                 const endIndex = Math.min(pageNumber * recordsPerPage, values.length);
 
                 // Update the entries information
-                entriesDiv.textContent = `Hiển thị ${startIndex} đến ${endIndex} trang của ${values.length} đang bán`;
+                entriesDiv.textContent = `Hiển thị ${startIndex} đến ${endIndex} kết quả của ${values.length} page đang bán`;
 				tongsopageDiv.textContent= `${values.length}`;
             }
 
